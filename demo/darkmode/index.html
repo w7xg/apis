@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>Hello Geist</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@geist-ui/style@latest/dist/style.css" />
+</head>
+<body>
+<center>
+<h1>Hello World!</h1>
+<button class="zi-btn success shadow"><a href="javascript:;" onclick="toggleTheme()">Dark/Light</a></button>
+</center>
+<script src="https://www.googletagmanager.com/gtag/js?id=UA-110371817-2" async></script><script>(function(){
+        window.toggleTheme = () => {
+          const html = document.querySelector('html')
+          const next = html.classList.contains('dark-theme') ? '' : 'dark-theme'
+          html.setAttribute('class', next)
+        };
+        
+        
+      })()</script>
+</body>
+</html>
